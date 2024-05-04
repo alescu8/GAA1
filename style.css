@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Arial', sans-serif;
+    background-color: #e2fae0;
+    /* Azul pastel para el fondo general */
+  }
+
+  #questionSection,
+  #happyAnimal,
+  #thinkAgainSection,
+  #finishedTimerSection {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    /* Blanco suave para el interior de los cuadros */
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  p {
+    color: black;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  .button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .button:hover {
+    transform: scale(1.1);
+  }
+
+  /* Estilos para el botón de Sí */
+  .yes-button {
+    background-color: #B2EBF2;
+    color: #01579B;
+
+  }
+
+  .no-button {
+    background-color: #FFCDD2;
+    color: #D32F2F;
+  }
+
+  #thinkAgainSection {
+    background-color: #FFCDD2;
+    color: #B71C1C;
+    border-color: #D32F2F;
+    display: none;
+  }
+
+  #happyAnimal {
+    background-color: #e3e2ff;
+    color: #880E4F;
+    border-color: #C2185B;
+    display: none;
+  }
+
+  #finishedTimerSection{
+    display: none;
+    background-color: #e3e2ff;
+    border-color: #C2185B;
+  }
+
+  #timerSection p {
+    color: #D32F2F;
+  }
+
+  .heart {
+    position: fixed;
+    bottom: -100px;
+    height: 60px;
+    width: 60px;
+    font-size: 35px;
+    opacity: 0.7;
+  }
+
+  @keyframes floating {
+    0% {
+      bottom: 100vh;
+      opacity: 0.7;
+    }
+
+    100% {
+      bottom: -100vh;
+      opacity: 0;
+    }
+  }
